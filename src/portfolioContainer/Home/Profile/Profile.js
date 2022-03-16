@@ -9,20 +9,20 @@ export default function Profile() {
                 <div className='profile-details'>
                     <div className='colz'>
                         <div className='colz-icon'>
-                        <a href="https://www.facebook.com/seydou.ba.581">
-                            <i className='fa fa-facebook-square'></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/seydou-ba-175148146/">
-                            <i className='fa fa fa-linkedin-square'></i>
-                        </a>
-                        <a href="https://twitter.com/SeydouB54909610">
-                            <i className='fa fa-twitter'></i>
-                        </a>
-                        <a href="https://github.com/seydouba95">
-                            <i className='fa fa-github'></i>
-                        </a>
+                            <a href="https://www.facebook.com/seydou.ba.581">
+                                <i className='fa fa-facebook-square'></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/seydou-ba-175148146/">
+                                <i className='fa fa fa-linkedin-square'></i>
+                            </a>
+                            <a href="https://twitter.com/SeydouB54909610">
+                                <i className='fa fa-twitter'></i>
+                            </a>
+                            <a href="https://github.com/seydouba95">
+                                <i className='fa fa-github'></i>
+                            </a>
                         </div>
-                       
+
                     </div>
                     <div className="profile-details-name">
                         <span className="primary text">
@@ -58,15 +58,9 @@ export default function Profile() {
                         </span>
                     </div>
                     <div className='profile-options'>
-                        <button className='btn primary-btn'>
-                            {""}
-                            Hire Me{" "}
-
-                        </button>
+                        <button className='btn primary-btn'>Hire Me</button>
                         <a href='seydouResume.pdf' download='seydouResume.pdf'>
-                            <button className='btn highlighted-btn'>
-                                Get Resume
-                            </button>
+                        <button className='btn highlighted-btn'>Get Resume</button>
                         </a>
                     </div>
                 </div>
