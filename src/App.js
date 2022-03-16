@@ -1,9 +1,8 @@
 import './App.css'
-import Profile from "./portfolioContainer/Home/Profile";
-
+import PortfolioContainer from './portfolioContainer/portfolioContainer';
 function App() {
     return <div className="App">
-        <Profile />
+      <PortfolioContainer/>
 
     </div>;
 }
