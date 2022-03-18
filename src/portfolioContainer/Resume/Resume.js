@@ -47,113 +47,125 @@ const Resume = (props) => {
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Web Skills", logoSrc: "globa.svg" },
+    { label: "Mobile Skills", logoSrc: "mobile-phone-2642.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   //here we have
-  const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
-    { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+  const programmingLanguagesSkillsDetails = [
+    { skill: "Java", ratingPercentage: 80 },
+    { skill: "Python", ratingPercentage: 76 },
+    { skill: "Javascript", ratingPercentage: 70 },
+    { skill: "PHP", ratingPercentage: 65 },
+    { skill: "C/C++", ratingPercentage: 60 },
+  
+  
   ];
 
-  const projectsDetails = [
-    {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
-    },
-    {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
-    },
-    {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
-    },
+  const webDevelopmentDetails = [
+    { skill: "HTML", ratingPercentage: 90 },
+    { skill: "CSS", ratingPercentage: 84 },
+    { skill: "Angular", ratingPercentage: 78 },
+    { skill: "Laravel", ratingPercentage: 72 },
+    { skill: "SpringBoot", ratingPercentage: 70 },
+    { skill: "Node JS", ratingPercentage: 64 },
+    { skill: "Express JS", ratingPercentage: 60 },
+    { skill: "React JS", ratingPercentage: 56 },
+   
   ];
+
+  const mobileDevelopmentDetails = [
+    { skill: "Android", ratingPercentage: 70 },
+    { skill: "Flutter", ratingPercentage: 60 },
+    { skill: "Ionic", ratingPercentage: 50 },
+
+
+  ];
+
+
+  
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"University of Quebec At Trois-Riviéres"}
+        subHeading={"MASTER of Computer Science"}
+        fromDate={"2021"}
+        toDate={"Present"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"University of Thies"}
+        subHeading={"BACHELOR of Computer Science"}
+        fromDate={"2016"}
+        toDate={"2019"}
       />
-      <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
-      />
+
+
     </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
-      <div className="experience-container">
+      <br/>
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
-          toDate={"Present"}
+          heading={"Modelsis, Dakar, SN"}
+          subHeading={"Web developer"}
+          fromDate={"Sept. 2020"}
+          toDate={"Dec. 2020"}
+        />
+        <div className="experience-description">
+        
+          <span className="resume-description-text">
+          - Contribute to Itoc Shipping development using Jhipster and Angular technology           
+           </span>
+    
+       </div>
+
+       
+        <ResumeHeading
+          heading={"Blackstar-Technologies, Dakar, SN"}
+          subHeading={"Web developer"}
+          fromDate={"Dec. 2019"}
+          toDate={"Mars  2020"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+          - Contribute to Finao application development using SpringBoot and Angular technology
           </span>
+          <br/>
+          <span className="resume-description-text">
+          - Develop the call management functionality of the Finao application using Asterisk technology
+          </span>
+          <br/>
         </div>
+      
+        
+        
+        <ResumeHeading
+          heading={"Sn Software, Dakar, SN"}
+          subHeading={"Web developer"}
+          fromDate={"Sept. 2019"}
+          toDate={"Oct. 2019"}
+        />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+          - Contribute to the development of C'perf Platform using Thymeleaf Template Engine and SpringBoot
           </span>
-          <br />
+        
+          <br/>
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+          - Contribute to the development of the SQM Platform user interface using JavaScript, html
+            and CSS
           </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
-          </span>
-          <br />
+          <br/>
         </div>
-      </div>
-    </div>,
+       
+        </div>,
 
-    /* PROGRAMMING SKILLS */
-    <div
-      className="resume-screen-container programming-skills-container"
-      key="programming-skills"
-    >
-      {programmingSkillsDetails.map((skill, index) => (
+    /* PROGRAMMING Languages  SKILLS */
+    <div className="resume-screen-container programming-skills-container" key="programming-languages-skills">
+      {programmingLanguagesSkillsDetails.map((skill, index) => (
         <div className="skill-parent" key={index}>
           <div className="heading-bullet"></div>
           <span>{skill.skill}</span>
@@ -167,17 +179,34 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* PROJECTS */
-    <div className="resume-screen-container" key="projects">
-      {projectsDetails.map((projectsDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectsDetails.title}
-          subHeading={projectsDetails.subHeading}
-          description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
-        />
+    /* Web Development */
+    <div className="resume-screen-container application-skills-container" key="web-development">
+      {webDevelopmentDetails.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+          <div className="skill-percentage">
+            <div
+              style={{ width: skill.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            ></div>
+          </div>
+        </div>
+      ))}
+    </div>,
+      /* Mobile  Development */
+      <div className="resume-screen-container application-skills-container" key="mobile-development">
+      {mobileDevelopmentDetails.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+          <div className="skill-percentage">
+            <div
+              style={{ width: skill.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            ></div>
+          </div>
+        </div>
       ))}
     </div>,
 
@@ -189,11 +218,11 @@ const Resume = (props) => {
       />
       <ResumeHeading
         heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+        description="Listening to soothing music is something i can never compromise with, skimming through Audiomack's senegalese songs charts is at times the best stress reliever that i can get my hands on."
       />
       <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        heading="Sports"
+        description="Like to cycling, basketball and football."
       />
     </div>,
   ];
@@ -220,8 +249,8 @@ const Resume = (props) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
-          alt="B"
+          src={require(`../../assets/Resume/${bullet.logoSrc}`)}
+          alt="problem with logo"
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>
