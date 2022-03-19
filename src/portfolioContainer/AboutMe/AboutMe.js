@@ -13,16 +13,17 @@ export default function AboutMe(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTSANTS = {
-    description:
-      "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+    description: "Full stack web and mobile developer with background knowledge of software concepts and architecture such as MVC, design pattern. Excellent communication and interpersonal skills acquired through two years of experience in customer service.",
+
     highlights: {
       bullets: [
+        "Second year computer science student",
         "Full Stack web and mobile development",
         "Interactive Front End as per the design",
-        "React and React Native",
-        "Redux for State Mnanagement",
+        "Git and Command Line such as PowerShell,Bash",
         "Building REST API",
         "Managing database",
+        
       ],
       heading: "Here are a Few Highlights:",
     },

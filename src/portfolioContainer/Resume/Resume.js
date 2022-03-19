@@ -47,44 +47,31 @@ const Resume = (props) => {
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Web Skills", logoSrc: "globa.svg" },
-    { label: "Mobile Skills", logoSrc: "mobile-phone-2642.svg" },
+
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
   //here we have
-  const programmingLanguagesSkillsDetails = [
-    { skill: "Java", ratingPercentage: 80 },
+  const programmingSkillsDetails = [
+    { skill: "Java", ratingPercentage: 85 },
+    { skill: "JavaScript", ratingPercentage: 80 },
     { skill: "Python", ratingPercentage: 76 },
-    { skill: "Javascript", ratingPercentage: 70 },
-    { skill: "PHP", ratingPercentage: 65 },
     { skill: "C/C++", ratingPercentage: 60 },
-  
-  
-  ];
-
-  const webDevelopmentDetails = [
-    { skill: "HTML", ratingPercentage: 90 },
-    { skill: "CSS", ratingPercentage: 84 },
-    { skill: "Angular", ratingPercentage: 78 },
+    { skill: "HTML", ratingPercentage: 80 },
+    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "PHP", ratingPercentage: 65 },
     { skill: "Laravel", ratingPercentage: 72 },
-    { skill: "SpringBoot", ratingPercentage: 70 },
-    { skill: "Node JS", ratingPercentage: 64 },
+    { skill: "SpringBoot", ratingPercentage: 85 },
+    { skill: "Angular", ratingPercentage: 80 },
+    { skill: "Node JS", ratingPercentage: 68 },
     { skill: "Express JS", ratingPercentage: 60 },
-    { skill: "React JS", ratingPercentage: 56 },
-   
-  ];
-
-  const mobileDevelopmentDetails = [
+    { skill: "Mongo Db", ratingPercentage: 62 },
+    { skill: "React JS", ratingPercentage: 50 },
     { skill: "Android", ratingPercentage: 70 },
     { skill: "Flutter", ratingPercentage: 60 },
-    { skill: "Ionic", ratingPercentage: 50 },
-
 
   ];
 
-
-  
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
@@ -92,7 +79,7 @@ const Resume = (props) => {
         heading={"University of Quebec At Trois-Riviéres"}
         subHeading={"MASTER of Computer Science"}
         fromDate={"2021"}
-        toDate={"Present"}
+        toDate={"present"}
       />
 
       <ResumeHeading
@@ -101,87 +88,73 @@ const Resume = (props) => {
         fromDate={"2016"}
         toDate={"2019"}
       />
-
-
     </div>,
 
     /* WORK EXPERIENCE */
-    <div className="resume-screen-container" key="work-experience">
-      <br/>
-        <ResumeHeading
-          heading={"Modelsis, Dakar, SN"}
-          subHeading={"Web developer"}
-          fromDate={"Sept. 2020"}
-          toDate={"Dec. 2020"}
-        />
-        <div className="experience-description">
-        
-          <span className="resume-description-text">
-          - Contribute to Itoc Shipping development using Jhipster and Angular technology           
-           </span>
     
-       </div>
+    <div className="resume-screen-container" key="work-experience">
+    
+      <ResumeHeading
+        heading={"Modelsis, Dakar, SN"}
+        subHeading={"Web developer"}
+        fromDate={"Sept. 2020"}
+        toDate={"Dec. 2020"}
+      />
+      <div className="experience-description">
 
-       
-        <ResumeHeading
-          heading={"Blackstar-Technologies, Dakar, SN"}
-          subHeading={"Web developer"}
-          fromDate={"Dec. 2019"}
-          toDate={"Mars  2020"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">
+        <span className="resume-description-text">
+          Contribute to Itoc Shipping development using Jhipster and Angular technology
+        </span>
+
+      </div>
+
+
+      <ResumeHeading
+        heading={"Blackstar-Technologies, Dakar, SN"}
+        subHeading={"Web developer"}
+        fromDate={"Dec. 2019"}
+        toDate={"Mar. 2020"}
+      />
+      <div className="experience-description">
+        <span className="resume-description-text">
           - Contribute to Finao application development using SpringBoot and Angular technology
-          </span>
-          <br/>
-          <span className="resume-description-text">
+        </span>
+        <br />
+        <span className="resume-description-text">
           - Develop the call management functionality of the Finao application using Asterisk technology
-          </span>
-          <br/>
-        </div>
-      
-        
-        
-        <ResumeHeading
-          heading={"Sn Software, Dakar, SN"}
-          subHeading={"Web developer"}
-          fromDate={"Sept. 2019"}
-          toDate={"Oct. 2019"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">
+        </span>
+        <br />
+      </div>
+
+
+
+      <ResumeHeading
+        heading={"Sn Software, Dakar, SN"}
+        subHeading={"Web developer"}
+        fromDate={"Sept. 2019"}
+        toDate={"Oct. 2019"}
+      />
+      <div className="experience-description">
+        <span className="resume-description-text">
           - Contribute to the development of C'perf Platform using Thymeleaf Template Engine and SpringBoot
-          </span>
-        
-          <br/>
-          <span className="resume-description-text">
+        </span>
+
+        <br />
+        <span className="resume-description-text">
           - Contribute to the development of the SQM Platform user interface using JavaScript, html
-            and CSS
-          </span>
-          <br/>
-        </div>
-       
-        </div>,
+          and CSS
+        </span>
+         
+      </div>
 
-    /* PROGRAMMING Languages  SKILLS */
-    <div className="resume-screen-container programming-skills-container" key="programming-languages-skills">
-      {programmingLanguagesSkillsDetails.map((skill, index) => (
-        <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
-          <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
-        </div>
-      ))}
     </div>,
 
-    /* Web Development */
-    <div className="resume-screen-container application-skills-container" key="web-development">
-      {webDevelopmentDetails.map((skill, index) => (
+    /* PROGRAMMING SKILLS */
+    <div
+      className="resume-screen-container programming-skills-container"
+      key="programming-skills"
+    >
+      {programmingSkillsDetails.map((skill, index) => (
         <div className="skill-parent" key={index}>
           <div className="heading-bullet"></div>
           <span>{skill.skill}</span>
@@ -194,21 +167,8 @@ const Resume = (props) => {
         </div>
       ))}
     </div>,
-      /* Mobile  Development */
-      <div className="resume-screen-container application-skills-container" key="mobile-development">
-      {mobileDevelopmentDetails.map((skill, index) => (
-        <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
-          <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
-        </div>
-      ))}
-    </div>,
+
+
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
@@ -250,7 +210,7 @@ const Resume = (props) => {
         <img
           className="bullet-logo"
           src={require(`../../assets/Resume/${bullet.logoSrc}`)}
-          alt="problem with logo"
+          alt="B"
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>

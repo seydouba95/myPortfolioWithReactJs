@@ -2,7 +2,7 @@ import Home from "../portfolioContainer/Home/Home";
 import AboutMe from "../portfolioContainer/AboutMe/AboutMe";
 import Resume from "../portfolioContainer/Resume/Resume";
 import Project from "../portfolioContainer/Project/Project";
-
+import ContactMe from "../portfolioContainer/ContactMe/ContactMe";
 export const TOTAL_SCREENS = [
     {
         screen_name: "Home",
@@ -20,7 +20,12 @@ export const TOTAL_SCREENS = [
         screen_name: "Projects",
         component: Project,
     },
+    {
+        screen_name: "ContactMe",
+        component: ContactMe,
+    },
 ];
+
 
 export const GET_SCREEN_INDEX = (screen_name) => {
     if (!screen_name) return -1;

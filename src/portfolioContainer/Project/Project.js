@@ -9,8 +9,8 @@ import Animations from "../../utilities/Animations";
 import "./Project.css";
 import modelSis from "../../../src/assets/Projects/modelSis.png";
 import bst  from "../../../src/assets/Projects/bst.png";
-import snSoftware from "../../../src/assets/Projects/snsoftware.jfif";
-import shape from "../../../src/img/Testimonial/shape-bg.png";
+import snSoftware from "../../../src/assets/Projects/2da0d8_7a5cf7aecbb14ca88b1fe92beb273ee2_mv2.jpeg";
+import shape from "../../../src/img/Project/shape-bg.png";
 import me from "../../../src/assets/Projects/seydou_ba_idphoto.jpg";
 
 
@@ -66,7 +66,7 @@ export default function Project(props) {
                     <p>
                       <i className="" />
                       This application allows to manage the stocks of Itoc Shipping.<br/>
-                      It is developed with the use of Angular and Jhipster technologies.
+                      It is developed with the use of Angular and Jhipster.
                               
                      
                     </p>
@@ -74,8 +74,7 @@ export default function Project(props) {
                   </div>
                   <div className="client-info">
                     <img src={modelSis} alt="no internet connection"></img>
-                    <h5>Itoc Shipping</h5>
-                    <p>Inventory management App</p>
+                    <h5>Itoc Shipping Application</h5>
                   </div>
                 </div>
               </div>
@@ -85,15 +84,14 @@ export default function Project(props) {
                   <div className="testi-comment">
                     <p>
                       Finao app allows to manage the call center of Finao.<br/>
-                      It is developed with the use of Angular, SpringBoot and Asterisk technologies.
+                      It is developed with the use of Angular, SpringBoot and Asterisk.
                     
                     </p>
                    
                   </div>
                   <div className="client-info">
                     <img src={bst} alt="no internet connection"></img>
-                    <h5>FINAO</h5>
-                    <p>Call Center App</p>
+                    <h5>FINAO Call Center</h5>
                   </div>
                 </div>
               </div>
@@ -102,8 +100,8 @@ export default function Project(props) {
                   <div className="testi-comment">
                     <p>
                      
-                    C'perf App allows companies to monitor their performance.<br/>
-                    It is developed with the use of Thymeleaf Template and SpringBoot technologies.
+                    C'perf allows companies to monitor their performance.<br/>
+                    It is developed with Thymeleaf Template and SpringBoot.
 
                    
                     </p>
@@ -111,8 +109,7 @@ export default function Project(props) {
                   </div>
                   <div className="client-info">
                     <img src={snSoftware} alt="no internet connection"></img>
-                    <h5>C'Perf</h5>
-                    <p>performance tool App</p>
+                    <h5>C'Perf Application</h5>
                   </div>
                 </div>
               </div>
@@ -127,8 +124,7 @@ export default function Project(props) {
                   </div>
                   <div className="client-info">
                     <img src={me} alt="no internet connection"></img>
-                    <h5>Cassava App</h5>
-                    <p>Disease detection on cassava leaf</p>
+                    <h5>Disease Detection cassava Leaf </h5>
                   </div>
                 </div>
               </div>
@@ -136,15 +132,14 @@ export default function Project(props) {
                 <div className="testi-item">
                   <div className="testi-comment">
                     <p>
-                    Foutanke App is a retail management application developed using Laravel technology.
+                    Foutanke is a retail management application developed using Laravel technology.
                     
                     </p>
                    
                   </div>
                   <div className="client-info">
                     <img src={me} alt="no internet connection"></img>
-                    <h5>Sales management application</h5>
-                    <p>Foutanke Shop App</p>
+                    <h5>Sales management application of Foutanke's shop</h5>
                   </div>
                 </div>
               </div>
@@ -153,7 +148,7 @@ export default function Project(props) {
                 <div className="testi-item">
                   <div className="testi-comment">
                     <p>
-                    PAF App is a  mobile application developed with Android.<br/>
+                    PAF  is a  mobile application developed with Android.<br/>
                     This application allows the public to recruit a guard in an agency.
                     
                     </p>
@@ -161,8 +156,7 @@ export default function Project(props) {
                   </div>
                   <div className="client-info">
                     <img src={me} alt="no internet connection"></img>
-                    <h5>Managing a security agency</h5>
-                    <p>PAF App</p>
+                    <h5>Security Guard Tracking Software</h5>
                   </div>
                 </div>
               </div>
