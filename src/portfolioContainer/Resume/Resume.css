@@ -23,7 +23,6 @@
   .resume-bullet-details {
     flex-grow: 1;
     width: 600px;
-    overflow: hidden;
     padding: 0 0 0 70px;
   }
   
@@ -97,6 +96,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: hidden;
     height: 360px;
     width: 100%;
   }
@@ -158,16 +158,16 @@
     flex-direction: column;
     position: relative;
     width: 50%;
+    overflow: hidden;
   }
-  
+
   .programming-skills-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
-  
+
   .skill-percentage {
     position: relative;
     height: 15px;
