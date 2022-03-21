@@ -118,7 +118,7 @@
     font-size: 16px;
     font-family: "Poppins SemiBold";
   }
-  
+
   .experience-description {
     max-width: 100%;
 
@@ -238,3 +238,33 @@
       width: 100%;
     }
   }
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 800px) {
+  .resume-main-heading span {
+    color: var(--dark-orange);
+    font-size: 0.7rem; /*1rem = 16px*/
+    font-family: "Poppins SemiBold";
+  }
+  .resume-sub-heading {
+    font-size: 0.6rem;
+    font-family: "Poppins SemiBold";
+    color: var(--black);
+    margin: 1px 0 0 0;
+  }
+  .heading-date {
+    background-color: #ff5823;
+    padding: 2px 10px;
+    font-size: 0.6rem;
+    border-radius: 12px;
+    color: var(--white);
+  }
+  .resume-description-text {
+    font-size: 0.6rem;
+  }
+  .experience-description {
+    margin: 2px 0 0 0;
+    text-align: justify;
+    max-width: 100%;
+  }
+}
+  

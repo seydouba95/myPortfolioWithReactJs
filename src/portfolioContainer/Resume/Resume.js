@@ -123,7 +123,6 @@ const Resume = (props) => {
         <span className="resume-description-text">
           - Develop the call management functionality of the Finao application using Asterisk technology
         </span>
-        <br />
       </div>
 
 
