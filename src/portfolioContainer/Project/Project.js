@@ -11,7 +11,7 @@ import modelSis from "../../../src/assets/Projects/modelSis.png";
 import bst  from "../../../src/assets/Projects/bst.png";
 import snSoftware from "../../../src/assets/Projects/2da0d8_7a5cf7aecbb14ca88b1fe92beb273ee2_mv2.jpeg";
 import shape from "../../../src/img/Project/shape-bg.png";
-import me from "../../../src/assets/Projects/IMG_7224.jpg";
+import me from "../../../src/assets/Projects/IMG_7224.JPG";
 
 
 

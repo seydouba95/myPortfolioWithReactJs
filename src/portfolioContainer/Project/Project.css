@@ -44,26 +44,7 @@
     margin: 0 0 10px;
     font-style: italic;
   }
-  .testimonial-section .testi-item p .fa-quote-left {
-    margin-right: 5px;
-    color: tomato;
-  }
-  .testimonial-section .testi-item p .fa-quote-right {
-    margin-left: 5px;
-    color: tomato;
-  }
-  
-  .testimonial-section .testi-comment .stars {
-    margin: 0 0 20px;
-  }
-  .testimonial-section .testi-comment .stars li {
-    display: inline-block;
-    margin: 0 1px;
-  }
-  .testimonial-section .testi-comment .stars li i {
-    font-size: 13px;
-    color: tomato;
-  }
+ 
   .testimonial-section .client-info {
     position: relative;
     padding-left: 80px;

@@ -13,10 +13,11 @@
   display: flex;
   width: 100%;
   box-shadow: 0 0px 20px -2px #1f2235;
+  text-align: center;
 }
 .about-me-profile {
   width: 50%;
-  background-image: url("");
+  background-image: url("../../../src/assets/Projects/IMG_7224.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
